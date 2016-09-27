@@ -200,7 +200,7 @@ function getCanonicalPath($path)
  */
 function getComposerRoot()
 {
-    $composerRoot = realpath(__DIR__ . DS . '../../../../../..');
+    $composerRoot = realpath(__DIR__ . DS . '../../../../..');
 
     while (!is_file($composerRoot . DS . 'composer.json')) {
         $newRoot = realpath($composerRoot . DS . '..');
